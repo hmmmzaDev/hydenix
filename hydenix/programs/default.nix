@@ -15,5 +15,8 @@
     };
     zsh.enable = true;
     nix-index.enable = true;
+    
+    nix-ld.enable = true;
+    nix-ld.libraries = [];
   };
 }
