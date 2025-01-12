@@ -16,6 +16,6 @@
     slurp # region select for screenshot/screenshare
     swappy # screenshot editor
     cliphist # clipboard manager
-    pkgs.hyprpolkitagent
+    hyprpolkitagent
   ];
 }
