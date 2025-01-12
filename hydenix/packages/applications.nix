@@ -14,5 +14,6 @@
     #vesktop # discord client
     google-chrome
     obsidian
+    hyprpolkitagent
   ];
 }
