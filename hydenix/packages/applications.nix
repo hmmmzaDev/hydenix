@@ -12,5 +12,7 @@
     discord # chat client
     webcord # discord client
     vesktop # discord client
+    google-chrome
+    obsidian
   ];
 }
