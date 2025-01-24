@@ -1,9 +1,13 @@
 name: Flake Check
 
-on: [pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  flake-check:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,5 +22,7 @@ jobs:
       - name: Check Template Flake
         run: |
           cd template
+          sed -i 's|url = "github:richen604/hydenix"|url = "path:../"|' flake.nix
           nix flake check
+          git checkout flake.nix
           rm -f flake.lock

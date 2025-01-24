@@ -8,10 +8,15 @@ let
     inputs
     ;
 in
-inputs.nixpkgs.lib.nixosSystem {
+inputs.hydenix-nixpkgs.lib.nixosSystem {
   inherit system;
-  specialArgs = commonArgs;
+  specialArgs = {
+    inherit userConfig inputs;
+  };
   modules = [
+    {
+      nixpkgs.pkgs = commonArgs.pkgs;
+    }
     ./configuration.nix
     inputs.home-manager.nixosModules.home-manager
     {
