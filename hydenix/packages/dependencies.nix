@@ -7,7 +7,7 @@ in
     # --------------------------------------------------- // Dependencies
 
     # System & Desktop Integration
-    polkit_gnome # authentication agent for privilege escalation
+    #polkit_gnome # authentication agent for privilege escalation
     dbus # inter-process communication daemon
     upower # power management/battery status daemon
     mesa # OpenGL implementation and GPU drivers
@@ -52,6 +52,7 @@ in
     # Hyprland Specific
     hyprcursor # Cursor theme engine for Hyprland
     hyprutils # Utility tools for Hyprland
+    hyprpolkitagent
 
     # Fonts & Theming
     fonts # Hyde font collection
