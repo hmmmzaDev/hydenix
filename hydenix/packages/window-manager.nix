@@ -7,7 +7,7 @@
     rofi-wayland # application launcher
     waybar # system bar
     swww # wallpaper
-    swaylock # lock screen
+    #swaylock # lock screen
     swaylock-fancy # lock screen
     wlogout # logout menu
     grimblast # screenshot tool
@@ -15,5 +15,7 @@
     slurp # region select for screenshot/screenshare
     swappy # screenshot editor
     cliphist # clipboard manager
+
+    hyprlock
   ];
 }
